@@ -1,0 +1,14 @@
+install ubuntu and then install openssh so you will be able login through putty 
+####### Needed packages for Ubuntu ######
+*****************update the packeges and libraries: **************************
+ apt-get upadate
+**************  install filezilla ********************************************
+sudo apt-get install filezilla
+************* install chromium***********************************************
+ wget http://192.168.46.134/SOFTWARES/Ubuntu/google-chrome-stable_current_amd64.deb && wget http://192.168.46.134/SOFTWARES/Ubuntu/skype-ubuntu-precise_4.3.0.37-1_i386.deb && wget http://192.168.46.134/SOFTWARES/Ubuntu/skype-call-recorder-ubuntu_0.11b_amd64.deb && wget http://192.168.46.134/SOFTWARES/Ubuntu/teamviewer_12.0.71510_i386.deb && sudo dpkg -i *.deb
+******************* install the brocken packegesor missing files*************
+sudo apt-get install -f -y
+*********************install java ********************************************
+wget http://192.168.46.134/SOFTWARES/Ubuntu/JAVA/jdk-7u79-linux-x64.tar.gz &&  tar -zxvf jdk-7u79-linux-x64.tar.gz && sudo mkdir -p /usr/lib/jvm/jdk1.7.0  && sudo mv jdk1.7.0_79/*  /usr/lib/jvm/jdk1.7.0/.  && sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.7.0/bin/java" 1 && sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.7.0/bin/javac" 1 && sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/jvm/jdk1.7.0/bin/javaws" 1
+************** install spark*************************************************
+wget http://192.168.46.134/SOFTWARES/Ubuntu/spark_2_6_3.tar.gz &&  tar -zxvf spark_2_6_3.tar.gz && sudo mkdir /opt/spark && sudo mv Spark/* /opt/spark && cd /opt/spark/  && sudo nano /usr/share/applications/spark.desktop
